@@ -65,7 +65,7 @@ public class ShippingTest extends BaseTest {
 		driver.get("http://15.207.109.183:8080/shop/customer/customLogon.html"); 
 		
 	} 
-	
+	@Ignore
 	@Test
 	public void Billing()throws InterruptedException,Exception{
 		File file = new File("C://Users//athar//Downloads//testdata.xlsx");
