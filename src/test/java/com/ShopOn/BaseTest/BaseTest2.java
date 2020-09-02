@@ -42,7 +42,7 @@ public class BaseTest2 {
 	ChromeOptions options = new ChromeOptions();
 	options.setHeadless(true);
 	
-	driver = new ChromeDriver(options);river = new ChromeDriver();
+	driver = new ChromeDriver(options);
 	 
 
 	//Open Login 
