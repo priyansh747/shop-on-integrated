@@ -21,8 +21,8 @@ public class BaseTest2 {
 	@BeforeClass
 	public static  void startTest()
 	{
-	report = new ExtentReports("D:\\2019"+"\\ExtentReportResults.html",false);
-	System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe"); 
+	report = new ExtentReports("./ExtentReportResults1.html",false);
+	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	//test = report.stasrtTest("ExtentDemo");
 	}
 
