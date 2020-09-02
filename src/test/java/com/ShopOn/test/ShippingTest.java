@@ -23,6 +23,11 @@ import com.ShopOn.Utilities.PropertyFile;
 import com.ShopOn.Utilities.ReadExcel;
 import com.ShopOn.Utilities.ReadExcel1;
 import com.ShopOn.Utilities.ScreenShot;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+ 
+
+
 import com.relevantcodes.extentreports.LogStatus;
 @RunWith(Parameterized.class)
 public class ShippingTest extends BaseTest {
@@ -59,8 +64,11 @@ public class ShippingTest extends BaseTest {
 	@Before 
 	public void setUp(){ 
 		//Initiate the Browser 
-		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe"); 
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); 
 		driver = new ChromeDriver(); 
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true);
+		driver = new ChromeDriver(options);
 		//Open Admin Login 
 		driver.get("http://15.207.109.183:8080/shop/customer/customLogon.html"); 
 		
