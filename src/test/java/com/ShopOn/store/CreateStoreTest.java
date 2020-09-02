@@ -41,7 +41,7 @@ public class CreateStoreTest extends BaseTest{
 	public static void endTest() {
 		BaseTest.endTest();
 	}
-	
+	@Ignore
 	@Test
 	public void ValidDataTest() throws InterruptedException {
 		StorePage create = new StorePage(driver);
