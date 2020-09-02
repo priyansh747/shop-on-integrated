@@ -7,7 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 import com.ShopOn.test.*;
 
 @RunWith(Suite.class)
-@SuiteClasses({ChangePasswordTest.class,ChangePasswordTest1.class,BillingTest.class,ShippingTest.class})
+@SuiteClasses({ChangePasswordTest.class,ChangePasswordTest1.class})
 
 public class MyAccountTestSuite {
 
