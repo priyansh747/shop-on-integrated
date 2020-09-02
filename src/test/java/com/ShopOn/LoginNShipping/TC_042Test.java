@@ -4,6 +4,7 @@ import com.ShopOn.BaseTest.BaseTestAdmin;
 import com.ShopOn.PageObjects.LoginProject;
 import com.ShopOn.Utilities.ScreenShot;
 import com.relevantcodes.extentreports.LogStatus;
+import org.junit.Ignore;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
