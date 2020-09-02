@@ -7,6 +7,7 @@ import com.ShopOn.BaseTest.BaseTest;
 import com.ShopOn.PageObjects.AdminLogin;
 import com.ShopOn.PageObjects.StorePage;
 import static org.junit.Test.*;
+import org.junit.Ignore;
 
 import org.junit.BeforeClass;
 
