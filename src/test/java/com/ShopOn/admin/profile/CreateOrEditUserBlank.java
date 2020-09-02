@@ -69,7 +69,7 @@ public class CreateOrEditUserBlank extends BaseTest2 {
 		objlogin.setUserName("admin@shopizer.com");
 		objlogin.setPassword("password");
 		objlogin.clickSubmit();
-		ReadExcel11 e1=new ReadExcel11("src\\test\\resources\\ValidCases.xlsx","ValidCases");
+		ReadExcel11 e1=new ReadExcel11("./src/test/resources/ValidCases.xlsx","ValidCases");
 		Sheet exampleSheet=e1.setExcelSheet();
 		WebElement e=driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[1]/ul/li[3]"));
 		e.click();
