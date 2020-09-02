@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -21,16 +22,20 @@ public class BaseTest3 {
 	//@BeforeClass
 		public static  void startTest()
 		{
-		report = new ExtentReports("D:\\2019"+"\\ExtentReportResults.html",false);
-		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe"); 
+		report = new ExtentReports("./ExtentReportResults1.html",false);
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		//test = report.startTest("ExtentDemo");
 		}
 
 
 	@Before
 	public void setUp() throws Exception {
-		System.setProperty("Webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true);
+	
+		driver = new ChromeDriver(options);
 
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
