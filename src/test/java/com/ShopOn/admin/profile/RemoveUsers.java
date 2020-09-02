@@ -46,7 +46,7 @@ public class RemoveUsers extends BaseTest2 {
 		BaseTest.endTest();
 	}
 	
-	
+	@Ignore
 	@Test
 	public void Login() throws Exception {
 		this.startTest();
