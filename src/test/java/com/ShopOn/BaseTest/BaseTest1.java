@@ -8,6 +8,8 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -39,7 +41,10 @@ public class BaseTest1 {
 
 
 
-	driver = new ChromeDriver();
+	ChromeOptions options = new ChromeOptions();
+	options.setHeadless(true);
+	
+	driver = new ChromeDriver(options);
 	 
 
 	//Open login page
