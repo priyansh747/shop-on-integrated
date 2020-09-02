@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import org.openqa.selenium.chrome.ChromeOptions;
 public class BaseTestAdmin {
 	public WebDriver driver; 
 	protected static ExtentTest test;
@@ -14,18 +15,18 @@ public class BaseTestAdmin {
 	//@BeforeClass
 	public static  void startTest()
 	{
-		report = new ExtentReports("D:\\2019"+"\\ExtentReportResults.html",false);
-		//System.setProperty("webdriver.chrome.driver", "D:\\2019\\chromedriver.exe"); 
-		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe");
-		
+		report = new ExtentReports("./ExtentReportResults1.html",false);
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");		
 		//Full Path  C:\\Users\\randy\\Downloads\\Git Projects\\GitWorkspace\\AmdJul2020-QA\\
 		test = report.startTest("ExtentDemo");
 	}
 	@Before 
 	public void setUp(){ 
 		//Initiate the Browser 
-		driver = new ChromeDriver();
-		//Open Admin Login 
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true);
+	
+		driver = new ChromeDriver(options);
 		driver.get("http://15.207.109.183:8080/admin/logon.html"); 
 		driver.manage().window().maximize();
 	} 
