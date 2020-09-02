@@ -18,7 +18,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.junit.Ignore;
 import com.ShopOn.BaseTest.BaseTest;
 import com.ShopOn.BaseTest.BaseTest2;
 import com.ShopOn.PageObjects.LoginPage;
@@ -49,7 +49,7 @@ public class EditUserFromUsersAllCheck extends BaseTest2 {
 		BaseTest.endTest();
 	}
 	
-	
+	@Ignore
 	@Test
 	public void Login() throws Exception {
 		this.startTest();
