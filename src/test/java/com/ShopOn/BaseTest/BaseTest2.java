@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -37,7 +39,10 @@ public class BaseTest2 {
 
 
 
-	driver = new ChromeDriver();
+	ChromeOptions options = new ChromeOptions();
+	options.setHeadless(true);
+	
+	driver = new ChromeDriver(options);river = new ChromeDriver();
 	 
 
 	//Open Login 
