@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
+import org.junit.Ignore;
 import com.ShopOn.BaseTest.BaseTest;
 import com.ShopOn.BaseTest.BaseTest2;
 import com.ShopOn.PageObjects.LoginPage;
@@ -41,7 +41,7 @@ public class CreateOrEditUserValid extends BaseTest2 {
 		BaseTest.endTest();
 	}
 	
-	
+	@Ignore
 	@Test
 	public void Login() throws Exception {
 		this.startTest();
