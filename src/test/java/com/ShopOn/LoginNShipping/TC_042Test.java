@@ -30,7 +30,7 @@ public class TC_042Test extends BaseTestAdmin {
 	public static void endTest() {
 		BaseTestAdmin.endTest();
 	}
-
+	@Ignore
 	@Test
 	public void LoginWithValidData() throws InterruptedException {
 		LoginProject objlogin = new LoginProject(super.driver);
